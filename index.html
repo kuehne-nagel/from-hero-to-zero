@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>From Hero To Zero - DevOps at KN FreightNet</title>
+
+		<meta name="description" content="From Hero To Zero - DevOps at KN FreightNet">
+		<meta name="author" content="Markus Krogemann">
+		<meta name="author" content="Sascha Krüger">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/kn.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- <link rel="stylesheet" href="lib/css/railscasts.css"> -->
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="header">
+				<img src="assets/kn/kn_name_eng_pc.gif" height="40em">
+				<span style="float:right; padding-right: 1em;"><img src="assets/kn/kn_logo_pc.gif" height="40em"></span>
+			</div>
+
+			<div class="footer">From Hero To Zero</div>
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-background="assets/images/superhero-712060_1920.jpg" data-background-transition="zoom">
+				  <div class="content-box">
+						<h1>From Hero To Zero</h1>
+						<h3>DevOps at KN FreightNet</h3>
+						<a href="http://www.kuehne-nagel.com"><small>Kuehne + Nagel (AG &amp; Co.) KG</small></a>
+					</div>
+				</section>
+
+				<section data-background-transition="fade">
+					<div style="display: inline-block">
+						<img src="assets/images/logos/Logo_DevOpsDays_2015.png" width="355" class="conference-logo">
+						<div class="speakers">
+							<div class="speaker-card">
+								<h4 class="speaker-name">Sascha Krueger</h4>
+								<small>
+									<p class="job-title">Developer &amp; Software Architect</p>
+									<div><img src="assets/images/logos/1445438724_github.png" class="social-logo">@skhome&nbsp;&nbsp;</div>
+									<div><img src="assets/images/logos/1445438581_squarico-18.png" class="social-logo">@sakruege</div>
+								</small>
+							</div>
+							<div class="speaker-card">
+								<h4 class="speaker-name">Markus Krogemann</h4>
+								<small>
+									<p class="job-title">Freelance Software Engineer</p>
+									<div><img src="assets/images/logos/1445438724_github.png" class="social-logo">@mkrogemann</div>
+									<div><img src="assets/images/logos/1445438581_squarico-18.png" class="social-logo">@mkrogemann</div>
+								</small>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<section data-background="assets/images/9641216546_c17e874603_k.jpg" data-background-transition="zoom">
+	          <div class="content-box">
+							<h1 style="margin-top:20px;">Time Travel</h1>
+						</div>
+					</section>
+					<section data-background="assets/images/brewery-377023_1920.jpg">
+						<div class="content-box">
+							<h2>Organisation</h2>
+							<p>software development</p>
+							<p>operations</p>
+							<p>infrastructure</p>
+						</div>
+					</section>
+					<section data-background="assets/images/note-511895_1920.jpg">
+						<div class="content-box">
+							<h2>handover</h2>
+							<p>RFC</p>
+							<p>deployment notes</p>
+							<p>transfer server</p>
+						</div>
+					</section>
+					<section data-background="assets/images/steering-801807_1920.jpg">
+						<div class="content-box">
+							<h2>Manual procedures</h2>
+							<p>deployments</p>
+							<p>server configuration</p>
+							<p>virtual machines</p>
+						</div>
+					</section>
+					<section data-background="assets/images/queue_waiting.jpg">
+						<div class="content-box">
+							<h2>Limited resources</h2>
+							<p>bottlenecks</p>
+							<p>queues</p>
+							<p>waiting times</p>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="assets/images/head-776681_1920.jpg" data-background-transition="zoom">
+	          <div class="content-box">
+							<h1 style="margin-top:20px;">Drivers for Change</h1>
+							<p>... and asking the right questions</p>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="assets/images/3keys.jpg" data-background-size="100%" data-background-transition="zoom">
+						<div class="content-box">
+							<h1>extend product portfolio</h1>
+						</div>
+					</section>
+					<section data-background="assets/images/grandstand-330930_1920.jpg">
+						<div class="content-box">
+							<h2>growth</h2>
+							<p>How do we raise the number of involved people without tipping on each others toes?</p>
+						</div>
+					</section>
+					<section data-background="assets/images/mixing-desk-351478_1920.jpg">
+						<div class="content-box">
+							<h2>autonomy</h2>
+							<p>How can we put the development teams in charge?</p>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="assets/images/time-371226_1920.jpg" data-background-transition="zoom">
+						<div class="content-box">
+							<h1>no deployment downtimes during business hours</h1>
+						</div>
+					</section>
+					<section data-background="assets/images/clock-897711_1920.jpg">
+						<div class="content-box">
+							<h2>availability</h2>
+							<p>Is there ever a perfect time for a downtime?</p>
+							<p>Are our developers available at that time?</p>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="assets/images/man-791049_1920.jpg" data-background-transition="zoom">
+						<div class="content-box">
+							<h1>support business experiments</h1>
+						</div>
+					</section>
+					<section data-background="assets/images/blue-923291_1920.jpg">
+						<div class="content-box">
+							<h2>balance</h2>
+							<p>What would be the minimal viable footprint?</p>
+							<p>How can we prepare for growth?</p>
+						</div>
+					</section>
+					<section data-background="assets/images/snowflake-554635_1920.jpg">
+						<div class="content-box">
+							<h2>predictability</h2>
+							<p>How do we avoid configuration drift?</p>
+						</div>
+					</section>
+					<section data-background="assets/images/logistics-852935_1920.jpg">
+						<div class="content-box">
+							<h2>delivery</h2>
+							<p>How do we speed up the delivery pipeline?</p>
+							<p>Can we reduce the time a feature spends<br>"waiting for attention"?</p>
+						</div>
+					</section>
+  			</section>
+
+				<section data-background="assets/images/rafting-661716_1280.jpg">
+					<div class="content-box">
+						<h1 style="margin-top: 20px">Challenge accepted</h1>
+					</div>
+				</section>
+
+				<section data-background="assets/images/960px-Opportunity_in_Endurance_Crater.jpg">
+					<div class="content-box">
+						<h1 style="margin-top: 20px">Opportunity</h1>
+					</div>
+				</section>
+
+				<section>
+					<section data-background="assets/images/legs-663039_1920.jpg">
+						<div class="content-box">
+							<h1 style="margin-top: 20px">Constraints</h1>
+						</div>
+				  </section>
+					<section>
+						<div class="content-box">
+							<img src="assets/images/responsibilities-before.jpg">
+						</div>
+					</section>
+				</section>
+
+				<section data-background="assets/images/solution-860229_1920.jpg">
+					<div class="content-box">
+						<h1 style="margin-top: 20px">Solutions</h1>
+					</div>
+				</section>
+
+				<section>
+					<section data-background="assets/images/3keys.jpg" data-background-size="100%" data-background-transition="zoom">
+						<div class="content-box">
+							<h1>vertical system decomposition</h1>
+						</div>
+					</section>
+					<section data-background="assets/images/sandstone-289198_1920.jpg">
+						<div class="content-box">
+							<h2 style="margin-top: 20px">Avoid the monolith</h2>
+						</div>
+					</section>
+					<section data-transition="fade">
+						<div class="content-box">
+							<img src="assets/images/verticals-new.jpg">
+						</div>
+					</section>
+					<section data-transition="fade">
+						<div class="content-box">
+							<img src="assets/images/verticals-new-automation.jpg">
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="assets/images/time-371226_1920.jpg" data-background-transition="zoom">
+						<div class="content-box">
+							<h1>zero downtime deployments</h1>
+						</div>
+					</section>
+					<section data-background="assets/images/water-meadow.png">
+						<div class="content-box">
+							<h1 style="margin-top: 20px">blue/green deployments</h1>
+						</div>
+					</section>
+					<section data-transition="fade">
+						<img src="assets/images/BlueGreenHAProxy-Blue.jpg" data-background-transition="fade">
+					</section>
+				</section>
+
+				<section>
+					<section data-background="assets/images/man-791049_1920.jpg" data-background-transition="zoom">
+						<div class="content-box">
+							<h1>continuous delivery</h1>
+						</div>
+					</section>
+					<section data-background="assets/images/transmission-580027_1920.jpg">
+						<div class="content-box">
+							<h2 style="margin-top: 20px">Test Automation</h2>
+							<p>Unit<p>
+							<p>Integration</p>
+							<p>Acceptance</p>
+							<p>Compatibility</p>
+						</div>
+					</section>
+
+					<section data-background="assets/images/transmission-580027_1920.jpg">
+						<div class="content-box">
+							<h2 style="margin-top: 20px">Infrastructure Automation</h2>
+						</div>
+						<pre class="transparent-code"><code class="json" data-trim>
+- name: restart rabbitmq if this is a fresh install
+  supervisorctl: name=freightnet-rabbitmq state=present
+  supervisorctl: name=freightnet-rabbitmq state=restarted
+  when: fresh_install.changed
+
+- name: tell slave nodes to join the master node if this is a fresh install
+  command: "{{ item }}"
+  with_items:
+    - rabbitmqctl stop_app
+    - rabbitmqctl reset
+    - rabbitmqctl join_cluster {{ rabbitmq_master_node_short_name }}
+    - rabbitmqctl start_app
+  when: fresh_install.changed and inventory_hostname != "{{ rabbitmq_master_node }}"
+  environment:
+      PATH: "{{ basedir }}/rabbitmq_server-{{ rabbitmq_version }}/sbin:{{ ansible_env.PATH }}"</code><h1>ANSIBLE</h1></pre>
+					</section>
+
+					<section data-background="assets/images/transmission-580027_1920.jpg">
+						<div class="content-box">
+							<h2 style="margin-top: 20px">Deployment Automation</h2>
+						</div>
+						<pre class="transparent-code"><code class="json" data-trim>
+- fail: msg="no application server group specified (variable app_server_group not set)"
+  when: app_server_group is not defined
+
+- fail: msg="no application specified (variable application not set)"
+  when: application is not defined
+
+- fail: msg="no application version specified (variable application_version not set)"
+  when: application_version is not defined
+
+- name: stop old application
+  supervisorctl: name={{ application }} state=stopped
+  ignore_errors: yes
+
+- name: clean up application base directory
+  file: path="{{ basedir }}/{{ application }}" state=absent</code><h1>ANSIBLE</h1></pre>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="assets/images/checklist.jpg"></section>
+
+					<section data-transition="fade">
+						<div class="content-box">
+							<img src="assets/images/responsibilities-before.jpg">
+						</div>
+					</section>
+					<section data-transition="fade">
+						<div class="content-box">
+							<img src="assets/images/responsibilities-now.jpg">
+						</div>
+					</section>
+				</section>
+
+				<section data-background="assets/images/is_this_devops.jpg"></section>
+
+				<section data-background="assets/images/devops-terms-1.jpg"></section>
+
+				<section data-background="assets/images/sticky-note-152133_1280.png">
+					<div class="content-box">
+						<h2 style="margin-top: 20px">Heads up</h2>
+						<p>Test your automation</p>
+						<p>Test for compatibility</p>
+						<p>Microservices are a valid approach...</p>
+						<p class="fragment">...if your organisation is ready for them</p>
+					</div>
+				</section>
+
+				<section data-background="assets/images/superhero-712060_1920.jpg">
+					<div class="content-box">
+						<h1 style="padding-top: 20px;">From Hero To Zero</h1>
+					</div>
+				</section>
+
+				<section data-background="assets/images/chalkboard-620316_1920.jpg"></section>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
